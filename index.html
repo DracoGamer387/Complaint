@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Complaint Box 💖</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Bestie what he did tell me 💖</h2>
+
+    <form id="grievanceForm">
+      <input type="text" name="title" placeholder="Title" required />
+      <textarea name="description" placeholder="What's bothering you?" rows="4" required></textarea>
+
+      <label for="moodSlider">Mood:</label>
+      <div class="mood-container">
+        <div id="moodBubble">😢</div>
+        <input type="range" id="moodSlider" name="mood" min="0" max="3" value="0" step="1" />
+      </div>
+
+      <button type="submit">Submit Grievance 💌</button>
+    </form>
+
+    <div class="response" id="response">
+      <h3>Thank you, Bestie 💗</h3>
+      <p>Your grievance has been sent to Sheraz 💌</p>
+      <p>(He will think about it... maybe 🫣)</p>
+      <p id="submittedTime" style="font-size: 0.9em; color: #d63384;"></p>
+      <button onclick="submitAnother()">Submit Another</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
